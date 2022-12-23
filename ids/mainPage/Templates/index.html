@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Orbiter is a bootstrap minimal & clean admin template">
+    <meta name="keywords" content="admin, admin panel, admin template, admin dashboard, responsive, bootstrap 4, ui kits, ecommerce, web app, crm, cms, html, sass support, scss">
+    <meta name="author" content="Themesbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Orbiter - Bootstrap Minimal & Clean Admin Template</title>
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="{% static "assets/images/favicon.ico" %}">
+    <!-- Start css -->
+    <!-- Switchery css -->
+    <link href="{% static "assets/plugins/switchery/switchery.min.css"%}" rel="stylesheet">
+    <!-- Apex css -->
+    <link href="{% static "assets/plugins/apexcharts/apexcharts.css"%}" rel="stylesheet">
+    
+    <link href="{% static "assets/css/entrop.css"%}" rel="stylesheet">
+    <!-- Slick css -->
+    <link href="{% static "assets/plugins/slick/slick.css"%}" rel="stylesheet">
+    <link href="{% static "assets/plugins/slick/slick-theme.css"%}" rel="stylesheet">
+    <link href="{% static "assets/css/bootstrap.min.css"%}" rel="stylesheet" type="text/css">
+    <link href="{% static "assets/css/icons.css"%}" rel="stylesheet" type="text/css">
+    <link href="{% static "assets/css/flag-icon.min.css"%}" rel="stylesheet" type="text/css">
+    <link href="{% static "assets/css/style.css"%}" rel="stylesheet" type="text/css">
+    <!-- End css -->
+</head>
+<body class="vertical-layout">    
+    <!-- Start Infobar Setting Sidebar -->
+    <div id="infobar-settings-sidebar" class="infobar-settings-sidebar">
+        <div class="infobar-settings-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Settings</h4><a href="javascript:void(0)" id="infobar-settings-close" class="infobar-settings-close"><img src="{% static "assets/images/svg-icon/close.svg"%}" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-settings-sidebar-body">
+            <div class="custom-mode-setting">
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Payment Reminders</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-first" checked /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Stock Updates</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-second" checked /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Open for New Products</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-third" /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Enable SMS</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-fourth" checked /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Newsletter Subscription</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-fifth" checked /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Show Map</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-sixth" /></div>
+                </div>
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">e-Statement</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-seventh" checked /></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-8"><h6 class="mb-0">Monthly Report</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-setting-eightth" checked /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <!-- End Infobar Setting Sidebar -->
+    <!-- Start Containerbar -->
+    <div id="containerbar">
+        <!-- Start Leftbar -->
+        <div class="leftbar">
+            <!-- Start Sidebar -->
+            <div class="sidebar">
+                <!-- Start Logobar -->
+                <div class="logobar">
+                    <a href="index.html" class="logo logo-large"><img src="{% static "assets/images/logo.svg"%}" class="img-fluid" alt="logo"></a>
+                    <a href="index.html" class="logo logo-small"><img src="{% static "assets/images/small_logo.svg"%}" class="img-fluid" alt="logo"></a>
+                </div>
+                <!-- End Logobar -->
+                <!-- Start Navigationbar -->
+                <div class="navigationbar">
+                    <ul class="vertical-menu">
+                        <li>
+                            <a href="javaScript:void();">
+                              <img src="{% static "assets/images/svg-icon/dashboard.svg"%}" class="img-fluid" alt="dashboard"><span>Главная</span><i class="feather icon-chevron-right pull-right"></i>
+                            </a>
+                            
+                        </li>
+                       
+                    </ul>
+                </div>
+                <!-- End Navigationbar -->
+            </div>
+            <!-- End Sidebar -->
+        </div>
+        <!-- End Leftbar -->
+        <!-- Start Rightbar -->
+        <div class="rightbar">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="{% static "assets/images/logo.svg"%}" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="{% static "assets/images/svg-icon/horizontal.svg"%}" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="{% static "assets/images/svg-icon/verticle.svg"%}" class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="{% static "assets/images/svg-icon/collapse.svg"%}" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="{% static "assets/images/svg-icon/close.svg"%}" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar">
+                <!-- Start row -->
+                <div class="row align-items-center">
+                    <!-- Start col -->
+                    <div class="col-md-12 align-self-center">
+                        <div class="togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                           <img src="{% static "assets/images/svg-icon/collapse.svg"%}" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                           <img src="{% static "assets/images/svg-icon/close.svg"%}" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="searchbar">
+                                        <form>
+                                            <div class="input-group">
+                                              <input type="search" class="form-control" placeholder="Поиск" aria-label="Search" aria-describedby="button-addon2">
+                                              <div class="input-group-append">
+                                                <button class="btn" type="submit" id="button-addon2"><img src="{% static "assets/images/svg-icon/search.svg"%}" class="img-fluid" alt="search"></button>
+                                              </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infobar">
+                            <ul class="list-inline mb-0">
+                                
+                                <li class="list-inline-item">
+                                    <div class="profilebar">
+                                        <div class="dropdown">
+                                          <a class="dropdown-toggle" href="#" role="button" id="profilelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{% static "assets/images/users/profile.svg"%}" class="img-fluid" alt="profile"><span class="feather icon-chevron-down live-icon"></span></a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink">
+                                                <div class="dropdown-item">
+                                                    <div class="profilename">
+                                                      <h5>Пользователь</h5>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div> 
+                <!-- End row -->
+            </div>
+            <!-- End Topbar -->
+            <!-- Start Breadcrumbbar -->                    
+            <div class="breadcrumbbar">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                        <h4 class="page-title">Анализ трафика</h4>
+                        
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="widgetbar">
+                            <button class="btn btn-primary-rgba" onclick="javascript:location.reload();"><i class="feather icon-plus mr-2"></i>Начать</button>
+                        </div>                        
+                    </div>
+                </div>          
+            </div>
+            <!-- End Breadcrumbbar -->
+            <!-- Start Contentbar -->    
+            <div class="contentbar">                
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg-12 col-xl-6">
+                        <!-- Start row -->
+                        <div class="row">
+                            <!-- Start col -->
+                            <div class="col-lg-12">
+                                <div class="card m-b-30">
+                                    <div class="card-header">                                
+                                        <div class="row align-items-center">
+                                            <div class="col-9">
+                                                <h5 class="card-title mb-0">Количество поступивших пакетов</h5>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row align-items-center">
+                                            
+                                            <div class="col-lg-12">
+                                                <div id="pocketgraph"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- End col --> 
+                            <!-- Start col -->
+                            <div class="col-lg-6 col-xl-12">
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <span class="align-self-center mr-3 action-icon badge badge-secondary-inverse"><i class="feather icon-folder"></i></span>
+                                            <div class="media-body">
+                                                <p class="mb-0">Всего пакетов</p>
+                                                
+                                                
+                                                <h5 class="mb-0"><div id="nums"></div></h5> 
+                                                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End col -->
+                            <!-- Start col -->
+                            <div class="col-lg-6 col-xl-12">
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <span class="align-self-center mr-3 action-icon badge badge-secondary-inverse"><i class="feather icon-clipboard"></i></span>
+                                            <div class="media-body">
+                                                <p class="mb-0">Средняя энтропия</p>
+                                                <h5 class="mb-0"><div id="ent"></div></h5>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!-- End row -->                        
+                    </div>
+                    <!-- End col -->                    
+                    <!-- Start col -->
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="card m-b-30 dash-widget">
+                            <div class="card-header">                                
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <h5 class="card-title mb-0">Энтропия</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-0 pl-0 pr-2">
+                                <div id="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+                <!-- Start row -->
+                <div class="row">
+                    
+                    <!-- Start col -->
+                    <div class="col-lg-12 col-xl-9">
+                        <!-- Start row -->
+                        <div class="row">
+                            <!-- Start col -->
+                            <!--Вероятность вторжения-->
+                            <div class="col-lg-6 col-xl-6">
+                                <div class="card m-b-30">
+                                    <div class="card-header">                                
+                                        <h5 class="card-title mb-0">Вероятность вторжения</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="pie"></div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- End col -->
+                            
+                            <!-- Start col -->
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="card m-b-30">
+                                    <div class="card-body text-center">
+                                        <div class="user-slider">
+                                            <div class="user-slider-item">
+                                                <img src="{% static "assets/images/users/men.svg"%}" alt="avatar" class="rounded-circle mt-3 mb-4">
+                                                <h5>Пользователь</h5>
+                                                <p>Инженер</p>
+                                                
+                                           
+                                        </div>                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- End col -->
+                            
+                            <!-- Start col -->
+                            
+                            <!-- End col -->
+                        </div>
+                        <!-- End row -->
+                    </div>
+                    <!-- End col -->
+                    <!-- Start col -->
+                    
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+            <!-- Start Footerbar -->
+            <div class="footerbar">
+                <footer class="footer">
+                    <p class="mb-0">© 2022 Красников Владимир - Анализатор сетевых вторжений.</p>
+                </footer>
+            </div>
+            <!-- End Footerbar -->
+        </div>
+        <!-- End Rightbar -->
+    </div>
+    <!-- End Containerbar -->
+    <!-- Start js -->        
+    <script src="{% static "assets/js/jquery.min.js"%}"></script>
+    <script src="{% static "assets/js/popper.min.js"%}"></script>
+    <script src="{% static "assets/js/bootstrap.min.js"%}"></script>
+    <script src="{% static "assets/js/modernizr.min.js"%}"></script>
+    <script src="{% static "assets/js/detect.js"%}"></script>
+    <script src="{% static "assets/js/jquery.slimscroll.js"%}"></script>
+    <script src="{% static "assets/js/vertical-menu.js"%}"></script>
+    <!-- Switchery js -->
+    <script src="{% static "assets/plugins/switchery/switchery.min.js"%}"></script>
+    <!-- Apex js -->
+    <script src="{% static "assets/plugins/apexcharts/apexcharts.min.js"%}"></script>
+    <script src="{% static "assets/plugins/apexcharts/irregular-data-series.js"%}"></script>
+    <script src="{% static "assets/plugins/apexcharts/grafik.js"%}"></script>
+    <script src="{% static "assets/plugins/apexcharts/entrop.js"%}"></script>
+        
+    <!-- Slick js -->
+    <script src="{% static "assets/plugins/slick/slick.min.js"%}"></script>
+    <!-- Custom Dashboard js -->   
+    <script src="{% static "assets/js/custom/custom-dashboard.js"%}"></script>
+    <!-- Core js -->
+    <script src="{% static "assets/js/core.js"%}"></script>
+    <script src="{%static "assets/js/numbers.js"%}"></script>
+    <script src="{%static "assets/js/ent.js"%}"></script>
+    <script src="{% static "assets/plugins/apexcharts/pie.js"%}"></script>
+    <!-- End js -->
+</body>
+</html>
